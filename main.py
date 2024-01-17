@@ -14,9 +14,9 @@ def char_to_morse(char):
         }
     return morse_code_dict.get(char.upper())
 
-def text_to_morse(PLAIN_TEXT):
-    print(PLAIN_TEXT)
-    print("".join( [ char_to_morse(t) for t in PLAIN_TEXT ] ))
+def text_to_morse(text):
+    print(text)
+    print("".join( [ char_to_morse(t) for t in text ] ))
 
 text_to_morse(PLAIN_TEXT)
 
